@@ -17,7 +17,7 @@ body{font-family:'Inter',sans-serif;background:#888;color:#1a1a2e;font-size:11px
 .header-qr img{width:80px;height:80px;border:2px solid #4361EE;border-radius:6px;padding:3px;background:#fff}
 .header-qr .qr-label{color:#8899BB;font-size:8px;margin-top:3px}
 
-.main{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr auto;gap:8px;padding:10px 12px 6px;overflow:hidden}
+.main{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr auto auto;gap:7px;padding:8px 12px 5px;overflow:hidden}
 
 .section{background:#fff;border-radius:6px;padding:10px 12px;border:1px solid #dde3f0;box-shadow:0 1px 3px rgba(0,0,0,0.05);overflow:hidden}
 .section h2{font-size:11px;font-weight:700;color:#0D1B2A;margin-bottom:6px;padding-bottom:4px;border-bottom:2.5px solid #4361EE;display:flex;align-items:center;gap:5px}
