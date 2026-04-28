@@ -70,6 +70,20 @@ body{font-family:'Inter',sans-serif;background:#888;color:#1a1a2e;font-size:11px
 .stat-mini .sv{font-size:18px;font-weight:900;display:block}
 .stat-mini .sl{font-size:8px;color:#666}
 
+/* Pipeline Diagram */
+.pipeline{display:flex;align-items:center;justify-content:center;gap:3px;margin:8px 0 6px;flex-wrap:nowrap}
+.pipe-step{text-align:center;flex-shrink:0}
+.pipe-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;margin:0 auto 3px;color:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.15)}
+.pipe-label{font-size:7px;font-weight:600;color:#333;line-height:1.2}
+.pipe-arrow{font-size:16px;color:#4361EE;font-weight:900;flex-shrink:0;margin:0 1px}
+.preprocess-box{background:#f0f4ff;border:1.5px solid #dde3f0;border-radius:5px;padding:6px 8px;margin-top:6px}
+.preprocess-box .preprocess-title{font-weight:700;font-size:9px;color:#0D1B2A;margin-bottom:3px;border-bottom:1.5px solid #4361EE;padding-bottom:2px}
+.preprocess-box p{font-size:8px;line-height:1.5;color:#333}
+
+/* Value colors */
+.pos-val{color:#2E7D32;font-weight:700}
+.neg-val{color:#C62828;font-weight:700}
+
 @media print{
   body{background:#fff;padding:0}
   .poster{box-shadow:none}
