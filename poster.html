@@ -27,23 +27,19 @@
   </div>
 </div>
 
-<!-- ═══════ MAIN ═══════ -->
+<!-- ═══════ MAIN 3-COL GRID ═══════ -->
 <div class="main">
 
 <!-- ══ COL 1 ══ -->
 <div class="col">
 
-  <!-- 1. Problem Statement -->
   <div class="section">
     <h2><span class="num">1</span> PROBLEM STATEMENT</h2>
     <p>Many students silently fall behind until it's too late for intervention. Traditional grading only flags failure <b>after</b> it happens.</p>
-    <p style="margin-top:1.5mm">This project builds an ML pipeline to <b>predict exam scores</b> from daily habits — enabling proactive, data-driven student support.</p>
-    <div class="green-box">
-      <b>Regression Task:</b> 6 habit features → Predicted score (0–100) → Risk level
-    </div>
+    <p style="margin-top:4px">This project builds an ML pipeline to <b>predict exam scores</b> from daily habits — enabling proactive, data-driven student support.</p>
+    <div class="green-box"><b>Regression Task:</b> 6 habit features → Predicted score (0–100) → Risk level</div>
   </div>
 
-  <!-- 2. Motivation -->
   <div class="section">
     <h2><span class="num">2</span> MOTIVATION</h2>
     <ul>
@@ -55,62 +51,40 @@
     </ul>
   </div>
 
-  <!-- 3. Dataset Overview -->
   <div class="section">
     <h2><span class="num">3</span> DATASET OVERVIEW</h2>
-    <p style="font-size:6.5pt;color:#666">Source: student_habits_performance.csv</p>
+    <p style="font-size:8px;color:#666">Source: student_habits_performance.csv</p>
     <div class="stat-row">
       <div class="stat-mini"><span class="sv" style="color:#4361EE">1,000</span><span class="sl">Records</span></div>
       <div class="stat-mini"><span class="sv" style="color:#7209B7">16</span><span class="sl">Features</span></div>
       <div class="stat-mini"><span class="sv" style="color:#F72585">91</span><span class="sl">Missing</span></div>
     </div>
-    <p style="font-size:7pt"><b>Target:</b> exam_score (continuous, 0–100)</p>
-    <p style="font-size:7pt"><b>After Cleaning:</b> 909 rows (dropped NAs, 0 duplicates)</p>
-    <p style="font-size:7pt"><b>Numerical:</b> age, study_hours, social_media, netflix, attendance, sleep, exercise, mental_health</p>
-    <p style="font-size:7pt"><b>Categorical:</b> gender, part_time_job, diet, parent_edu, internet, extracurricular</p>
+    <p style="font-size:8px"><b>Target:</b> exam_score (continuous, 0–100)</p>
+    <p style="font-size:8px"><b>After Cleaning:</b> 909 rows · 0 duplicates</p>
+    <p style="font-size:8px"><b>Numerical:</b> study_hours, attendance, mental_health, social_media, sleep, exercise, netflix, age</p>
+    <p style="font-size:8px"><b>Categorical:</b> gender, part_time_job, diet, parent_edu, internet, extracurricular</p>
   </div>
 
-  <!-- 4. Methodology Pipeline (proper HTML/CSS) -->
   <div class="section">
     <h2><span class="num">4</span> METHODOLOGY / PROJECT PIPELINE</h2>
     <div class="pipeline">
-      <div class="pipe-step">
-        <div class="pipe-icon" style="background:#4361EE">📥</div>
-        <div class="pipe-label">Data<br>Loading</div>
-      </div>
+      <div class="pipe-step"><div class="pipe-icon" style="background:#4361EE">📥</div><div class="pipe-label">Data<br>Loading</div></div>
       <div class="pipe-arrow">→</div>
-      <div class="pipe-step">
-        <div class="pipe-icon" style="background:#7209B7">⚙️</div>
-        <div class="pipe-label">Preprocessing &amp;<br>Feature Eng.</div>
-      </div>
+      <div class="pipe-step"><div class="pipe-icon" style="background:#7209B7">⚙️</div><div class="pipe-label">Preprocessing<br>&amp; Feature Eng.</div></div>
       <div class="pipe-arrow">→</div>
-      <div class="pipe-step">
-        <div class="pipe-icon" style="background:#F72585">📊</div>
-        <div class="pipe-label">EDA &amp;<br>Visualization</div>
-      </div>
+      <div class="pipe-step"><div class="pipe-icon" style="background:#F72585">📊</div><div class="pipe-label">EDA &amp;<br>Visualization</div></div>
       <div class="pipe-arrow">→</div>
-      <div class="pipe-step">
-        <div class="pipe-icon" style="background:#3A0CA3">🤖</div>
-        <div class="pipe-label">Model<br>Training</div>
-      </div>
+      <div class="pipe-step"><div class="pipe-icon" style="background:#3A0CA3">🤖</div><div class="pipe-label">Model<br>Training</div></div>
       <div class="pipe-arrow">→</div>
-      <div class="pipe-step">
-        <div class="pipe-icon" style="background:#4CC9F0">📈</div>
-        <div class="pipe-label">Evaluation<br>(R², MAE, RMSE)</div>
-      </div>
+      <div class="pipe-step"><div class="pipe-icon" style="background:#4CC9F0">📈</div><div class="pipe-label">Evaluation<br>(R², MAE)</div></div>
       <div class="pipe-arrow">→</div>
-      <div class="pipe-step">
-        <div class="pipe-icon" style="background:#2DC653">🚀</div>
-        <div class="pipe-label">Deployment<br>(Streamlit App)</div>
-      </div>
+      <div class="pipe-step"><div class="pipe-icon" style="background:#2DC653">🚀</div><div class="pipe-label">Deployment<br>(Streamlit)</div></div>
     </div>
     <div class="preprocess-box">
       <p class="preprocess-title">Data Preprocessing</p>
       <p>✔ Removed 91 missing values (dropna)</p>
       <p>✔ <b>Label Encoding</b> on 6 categorical columns</p>
-      <p>✔ Verified 0 duplicate records</p>
-      <p>✔ <b>Train / Test Split:</b> 80% training, 20% testing</p>
-      <p>✔ <b>Cross-Validation:</b> 5-Fold GridSearchCV</p>
+      <p>✔ <b>Train/Test Split:</b> 80/20 &nbsp; ✔ <b>CV:</b> 5-Fold GridSearchCV</p>
     </div>
   </div>
 </div>
@@ -118,7 +92,6 @@
 <!-- ══ COL 2 ══ -->
 <div class="col">
 
-  <!-- 5. Models Compared -->
   <div class="section">
     <h2><span class="num">5</span> MODELS COMPARED</h2>
     <table class="sm-table">
@@ -130,7 +103,6 @@
     </table>
   </div>
 
-  <!-- 6. Results & Evaluation -->
   <div class="section">
     <h2><span class="num">6</span> RESULTS &amp; EVALUATION</h2>
     <table class="sm-table">
@@ -142,17 +114,15 @@
     </table>
   </div>
 
-  <!-- 7. Model R² vs MAE chart -->
   <div class="section">
     <h2><span class="num">7</span> MODEL R² SCORE vs MAE</h2>
-    <img src="ppt_assets/p_model_accuracy_bar.png" alt="Model Comparison" class="md">
+    <img src="ppt_assets/p_model_accuracy_bar.png" alt="Model Comparison" class="chart-img">
   </div>
 
-  <!-- 8. Feature Selection -->
   <div class="section">
-    <h2><span class="num">8</span> FEATURE SELECTION</h2>
+    <h2><span class="num">8</span> FEATURE SELECTION (6 of 14)</h2>
     <table class="sm-table">
-      <tr><th>Feature</th><th>Corr (r)</th><th>Reason Selected</th></tr>
+      <tr><th>Feature</th><th>Corr</th><th>Reason Selected</th></tr>
       <tr><td>study_hours_per_day</td><td class="pos-val">0.83</td><td>Strongest +ve driver</td></tr>
       <tr><td>attendance_percentage</td><td class="pos-val">0.58</td><td>Engagement measure</td></tr>
       <tr><td>mental_health_rating</td><td class="pos-val">0.49</td><td>Cognitive wellness</td></tr>
@@ -160,35 +130,11 @@
       <tr><td>exercise_frequency</td><td class="pos-val">0.28</td><td>Physical well-being</td></tr>
       <tr><td>social_media_hours</td><td class="neg-val">-0.31</td><td>Distraction (negative)</td></tr>
     </table>
-    <p style="font-size:6.5pt;margin-top:4px;color:#555"><b>Strategy:</b> Ensemble Mixed — Pearson correlation + statistical dependency → 6 of 14 features selected.</p>
+    <p style="font-size:7px;margin-top:3px;color:#555"><b>Strategy:</b> Ensemble Mixed — Pearson + MI + RF → 6 of 14 selected.</p>
   </div>
 
-  <!-- 9. Exam Score Distribution -->
   <div class="section">
-    <h2><span class="num">9</span> EXAM SCORE DISTRIBUTION</h2>
-    <img src="ppt_assets/f_exam_dist.png" alt="Exam Distribution" class="md">
-  </div>
-</div>
-
-<!-- ══ COL 3 ══ -->
-<div class="col">
-
-  <!-- 10. Feature Analysis — All Scatter Plots -->
-  <div class="section" style="flex:1.4">
-    <h2><span class="num">10</span> FEATURE ANALYSIS — SCATTER PLOTS</h2>
-    <img src="ppt_assets/f_all_scatter_grid.png" alt="Feature Scatter Plots" style="width:100%;border-radius:4px;margin-top:4px">
-    <p style="font-size:6.5pt;margin-top:3px;color:#555">Each feature plotted against exam score with trend line. Study hours (r=0.83) shows strongest positive impact; social media (r=-0.31) shows negative impact.</p>
-  </div>
-
-  <!-- 11. Correlation Heatmap -->
-  <div class="section" style="flex:1">
-    <h2><span class="num">11</span> CORRELATION HEATMAP</h2>
-    <img src="ppt_assets/f_heatmap.png" alt="Heatmap" class="md">
-  </div>
-
-  <!-- 12. Risk Classification -->
-  <div class="section">
-    <h2><span class="num">12</span> RISK CLASSIFICATION</h2>
+    <h2><span class="num">9</span> RISK CLASSIFICATION</h2>
     <table class="risk-table">
       <tr><th>Risk Level</th><th>Range</th><th>Action</th></tr>
       <tr><td><span class="risk-badge" style="background:#EF233C">High Risk ⚠️</span></td><td>&lt; 40</td><td>Immediate intervention</td></tr>
@@ -199,20 +145,37 @@
   </div>
 </div>
 
+<!-- ══ COL 3: Feature Analysis ══ -->
+<div class="col">
+
+  <div class="section">
+    <h2><span class="num">10</span> FEATURE ANALYSIS — MUTUAL INFORMATION</h2>
+    <img src="ppt_assets/fa_mutual_info.png" alt="Mutual Information Gain" class="chart-img">
+  </div>
+
+  <div class="section">
+    <h2><span class="num">11</span> FEATURE ANALYSIS — RF IMPORTANCE</h2>
+    <img src="ppt_assets/fa_rf_importance.png" alt="Random Forest Feature Importance" class="chart-img">
+  </div>
+
+  <div class="section">
+    <h2><span class="num">12</span> FEATURE ANALYSIS — CORRELATION</h2>
+    <img src="ppt_assets/fa_correlation.png" alt="Pearson Correlation" class="chart-img">
+  </div>
+</div>
+
 <!-- ══ BOTTOM ROW ══ -->
 <div class="span-full bottom-row">
 
-  <!-- 13. Key Insights -->
   <div class="section">
     <h2><span class="num">13</span> KEY INSIGHTS</h2>
-    <div class="insight-item"><div class="dot" style="background:#2DC653"></div><p>Study hours is the <b>strongest predictor</b> (r=0.83).</p></div>
+    <div class="insight-item"><div class="dot" style="background:#2DC653"></div><p>Study hours is <b>strongest predictor</b> across all 3 methods.</p></div>
     <div class="insight-item"><div class="dot" style="background:#4361EE"></div><p>Mental health & attendance are <b>critical secondary</b> factors.</p></div>
     <div class="insight-item"><div class="dot" style="background:#F72585"></div><p>Social media has <b>negative</b> impact on scores.</p></div>
-    <div class="insight-item"><div class="dot" style="background:#7209B7"></div><p>XGBoost outperforms all with <b>lowest MAE</b>.</p></div>
+    <div class="insight-item"><div class="dot" style="background:#7209B7"></div><p>MI, RF importance & correlation <b>agree</b> on top features.</p></div>
     <div class="insight-item"><div class="dot" style="background:#4CC9F0"></div><p>6 features explain <b>86% of variance</b>.</p></div>
   </div>
 
-  <!-- 14. Why XGBoost -->
   <div class="section">
     <h2><span class="num">14</span> WHY XGBoost? — BEST MODEL</h2>
     <ul>
@@ -231,19 +194,15 @@
     </div>
   </div>
 
-  <!-- 15. Conclusion -->
   <div class="section">
     <h2><span class="num">15</span> CONCLUSION</h2>
     <div class="insight-item"><div class="dot" style="background:#2DC653"></div><p>XGBoost achieved <b>R²=0.8613</b>, best overall.</p></div>
     <div class="insight-item"><div class="dot" style="background:#2DC653"></div><p>6 features are <b>sufficient</b> for reliable prediction.</p></div>
     <div class="insight-item"><div class="dot" style="background:#2DC653"></div><p>4-tier risk classifier for <b>proactive support</b>.</p></div>
     <div class="insight-item"><div class="dot" style="background:#2DC653"></div><p>Streamlit app for <b>real-time predictions</b>.</p></div>
-    <div class="blue-box">
-      <b>Deploy XGBoost.</b> Use feature importance for targeted counselling.
-    </div>
+    <div class="blue-box"><b>Deploy XGBoost.</b> Use feature importance for targeted counselling.</div>
   </div>
 
-  <!-- 16. Future Work -->
   <div class="section">
     <h2><span class="num">16</span> FUTURE WORK</h2>
     <ul>
@@ -270,6 +229,6 @@
   </div>
 </div>
 
-</div><!-- /poster -->
+</div>
 </body>
 </html>

@@ -17,7 +17,7 @@ body{font-family:'Inter',sans-serif;background:#888;color:#1a1a2e;font-size:11px
 .header-qr img{width:80px;height:80px;border:2px solid #4361EE;border-radius:6px;padding:3px;background:#fff}
 .header-qr .qr-label{color:#8899BB;font-size:8px;margin-top:3px}
 
-.main{flex:1;display:grid;grid-template-columns:1fr 1.1fr 1.1fr;grid-template-rows:1fr auto;gap:8px;padding:10px 12px 6px;overflow:hidden}
+.main{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr auto;gap:8px;padding:10px 12px 6px;overflow:hidden}
 
 .section{background:#fff;border-radius:6px;padding:10px 12px;border:1px solid #dde3f0;box-shadow:0 1px 3px rgba(0,0,0,0.05);overflow:hidden}
 .section h2{font-size:11px;font-weight:700;color:#0D1B2A;margin-bottom:6px;padding-bottom:4px;border-bottom:2.5px solid #4361EE;display:flex;align-items:center;gap:5px}
@@ -29,6 +29,7 @@ body{font-family:'Inter',sans-serif;background:#888;color:#1a1a2e;font-size:11px
 .section img{width:100%;border-radius:4px;margin-top:5px;display:block}
 .section img.sm{max-height:100px;object-fit:contain}
 .section img.md{max-height:140px;object-fit:contain}
+.section img.chart-img{width:100%;height:auto;object-fit:contain;margin-top:4px}
 
 .best-model-box{background:linear-gradient(135deg,#E8F5E9,#C8E6C9);border:2px solid #2DC653;border-radius:6px;padding:8px 10px;text-align:center;margin-top:6px}
 .best-model-box h3{color:#1B5E20;font-size:14px;font-weight:900}
@@ -48,6 +49,8 @@ body{font-family:'Inter',sans-serif;background:#888;color:#1a1a2e;font-size:11px
 .risk-badge{display:inline-block;padding:2px 8px;border-radius:3px;font-weight:700;font-size:9px;color:#fff}
 
 .col{display:flex;flex-direction:column;gap:8px;overflow:hidden}
+.col .section{flex:1;display:flex;flex-direction:column}
+.col .section img.chart-img{flex:1;min-height:0;object-fit:contain}
 .span-full{grid-column:1/-1}
 .bottom-row{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px}
 
